@@ -1,0 +1,22 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+user_1:
+  name: Hugues
+  email: hugues@snap.com
+
+user_2:
+  name: Richard
+  email: richard@snap.com
+
+user_3:
+  name: Martin
+  email: martin@snap.com
+
+user_4:
+  name: Alex
+  email: alex@snap.com
+
+user_5:
+  name: Benoit
+  email: benoit@snap.com
+

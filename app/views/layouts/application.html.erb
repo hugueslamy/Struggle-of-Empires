@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Struggle of Empires</title>
+  <%= stylesheet_link_tag 'scaffold' %>
+  <%= stylesheet_link_tag 'main' %>
+  <%= javascript_include_tag :defaults %>
+  <%= javascript_include_tag 'soe_drop' %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+  <h1>Struggle of Empires</h1>
+  <%= render '/layouts/login' %>
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
+  <%= yield %>
+  
+</body>
+</html>

@@ -1,0 +1,36 @@
+<%= form_for(@proposition) do |f| %>
+  <% if @proposition.errors.any? %>
+  <div id="errorExplanation">
+    <h2><%= pluralize(@proposition.errors.count, "error") %> prohibited this proposition from being saved:</h2>
+    <ul>
+    <% @proposition.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sponsor %><br />
+    <%= f.text_field :sponsor %>
+  </div>
+  <div class="field">
+    <%= f.label :positionA %><br />
+    <%= f.text_field :positionA %>
+  </div>
+  <div class="field">
+    <%= f.label :positionB %><br />
+    <%= f.text_field :positionB %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br />
+    <%= f.text_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :opened %><br />
+    <%= f.check_box :opened %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

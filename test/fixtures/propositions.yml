@@ -1,0 +1,57 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+previous_proposition1:
+  playing: player_1
+  game: game_1
+  war: 1
+  round: 1
+  positionA: Austria
+  positionB: Spain
+  amount: 5
+  opened: false
+  rejected: false
+
+previous_proposition2:
+  playing: player_2
+  game: game_1
+  war: 1
+  round: 2
+  positionA: France
+  positionB: Russia
+  amount: 6
+  opened: false
+  rejected: false
+
+current_proposition:
+  playing: player_3
+  game: game_1
+  war: 1
+  round: 3
+  positionA: England
+  positionB: 
+  amount: 4
+  opened: true
+  rejected: false
+
+previous_proposition3:
+  playing: player_6
+  game: game_2
+  war: 1
+  round: 1
+  positionA: Austria
+  positionB: Spain
+  amount: 5
+  opened: false
+  rejected: false
+
+current_proposition2:
+  playing: player_8
+  game: game_2
+  war: 1
+  round: 2
+  positionA: 
+  positionB: 
+  amount: 0
+  opened: true
+  rejected: false
+

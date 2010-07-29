@@ -1,0 +1,20 @@
+<table>
+  <tr>
+    <th>A</th>
+      <td id="propA">
+        <% unless @game.current_proposition.positionA.empty?%>
+          <%= image_tag @game.current_proposition.positionA.downcase + '.gif', :title => @game.current_proposition.positionA %>
+        <% end %>              
+      </td>
+  </tr>
+  <tr>
+    <th>B</th>
+      <td id="propB">
+        <% unless @game.current_proposition.positionB.empty? %>
+          <%= image_tag @game.current_proposition.positionB.downcase + '.gif', :title => @game.current_proposition.positionB %>
+        <% end %>
+      </td>
+  </tr>
+</table>
+
+

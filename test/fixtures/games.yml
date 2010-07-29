@@ -1,0 +1,16 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+game_1:
+  name: Test War
+  war: 1
+  round: 3
+
+game_2:
+  name: Test War 2
+  war: 1
+  round: 2
+
+game_3:
+  name: Test War 3
+  war: 1
+  round: 1

@@ -1,0 +1,7 @@
+<div id="games">
+  <ul>
+  <% current_user.games.each do |game|  %>
+    <li><%= link_to game.name, game %></li>
+  <% end %>
+  </ul>
+</div>

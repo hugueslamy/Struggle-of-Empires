@@ -1,0 +1,84 @@
+body {
+  /* background: url("../images/back.jpg") no-repeat fixed 0 0 transparent; */
+  background-color: #facb93;
+  width: 960px;
+  text-align: middle;
+  margin:auto;
+}
+
+td, th {
+  height: 31px;
+  width: 31px;
+  border:1px solid black;
+}
+
+.acceptable {
+  background-color: green;
+}
+
+#counters {
+  width:480px;
+  float:left;
+}
+
+#proposals {
+  width: 480px;
+  float: left;
+}
+
+#prev_war {
+  clear: both;
+}
+
+#counters ul {
+  list-style: none;
+}
+
+#counters ul li {
+  height: 33px;
+  width: 200px;
+  border-style:solid;
+  border-width:2px;
+  margin-bottom: 2px;
+}
+
+.country {
+  float:right;
+  margin-top: 1px;
+  margin-right: 1px;
+  opacity: 0.5;
+}
+
+.token {
+  opacity: 1.0;
+}
+
+.pass {
+  margin: 1px;
+}
+
+.austria {
+  border-color: black;
+}
+
+.dutch {
+  border-color: orange;
+}
+
+.england {
+  border-color: red;
+}
+
+.france {
+  border-color: blue;
+}
+.prussia {
+  border-color: gray;
+}
+.russia {
+  border-color: green;
+}
+.spain {
+  border-color: yellow;
+}
+

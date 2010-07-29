@@ -1,0 +1,31 @@
+<h1>Listing propositions</h1>
+
+<table>
+  <tr>
+    <th>Sponsor</th>
+    <th>Positiona</th>
+    <th>Positionb</th>
+    <th>Amount</th>
+    <th>Opened</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @propositions.each do |proposition| %>
+  <tr>
+    <td><%= proposition.sponsor %></td>
+    <td><%= proposition.positionA %></td>
+    <td><%= proposition.positionB %></td>
+    <td><%= proposition.amount %></td>
+    <td><%= proposition.opened %></td>
+    <td><%= link_to 'Show', proposition %></td>
+    <td><%= link_to 'Edit', edit_proposition_path(proposition) %></td>
+    <td><%= link_to 'Destroy', proposition, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Proposition', new_proposition_path %>

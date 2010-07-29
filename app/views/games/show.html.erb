@@ -1,0 +1,33 @@
+<p>
+  <b>Game:</b>
+  <%= @game.name %><br/>
+  <b>War:</b>
+  <%= @game.war %>
+  <b>Round:</b>
+  <%= @game.round %>
+</p>
+
+<%= render 'counters' %>
+<% if @game.war <= 3 %>
+  <div id="proposals">
+    <h2>Current</h2>
+    <%= render 'proposal' %>
+    Actual bid: <%= @game.current_proposition.amount ?  @game.current_proposition.amount : 'nil' %>
+    <% if @game.current_player.user_id == current_user.id %>
+      <%= render 'bid_form' %>
+      <%= render 'drop_javascript' %>
+    <% end %>
+    <h2>Alliances</h2>
+    <%= render :partial => "table", :locals => { :war_to_display => @game.war } %>
+  </div>
+<% end %>
+
+<h2 id="prev_war">Previous War Alliance</h2>
+<% 3.downto(1) do |old_war| %>
+  <% next if old_war >= @game.war %>
+  <%= render :partial => "table", :locals => {:war_to_display => old_war} %>
+<% end %>
+
+
+<%= link_to 'Back', games_path %>
+

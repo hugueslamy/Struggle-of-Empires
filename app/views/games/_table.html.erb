@@ -1,0 +1,15 @@
+<table>
+  <tr>
+    <th>A</th>
+    <% @game.propositions_tabled(war_to_display)[0].each do |country| %>
+      <%= content_tag :td, get_alliance_image(country) %>
+    <% end %>
+  </tr>
+  <tr>
+    <th>B</th>
+    <% @game.propositions_tabled(war_to_display)[1].each do |country| %>
+      <%= content_tag :td, get_alliance_image(country) %>
+    <% end %>
+  </tr>
+</table>
+

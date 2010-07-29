@@ -1,0 +1,11 @@
+<div id="login">
+
+  <% if user_signed_in? %>
+    Hello <strong><%= current_user.name %></strong>, if not <strong><%= current_user.name %></strong>
+    <%= link_to 'Logout', destroy_user_session_path %>
+  <% else %>
+    <%= link_to 'Sign up', new_user_registration_path %> |
+    <%= link_to 'Login', new_user_session_path %>
+  <% end %>
+</div>
+

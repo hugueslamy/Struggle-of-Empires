@@ -1,0 +1,30 @@
+<p class="notice"><%= notice %></p>
+
+<p>
+  <b>Sponsor:</b>
+  <%= @proposition.sponsor %>
+</p>
+
+<p>
+  <b>Positiona:</b>
+  <%= @proposition.positionA %>
+</p>
+
+<p>
+  <b>Positionb:</b>
+  <%= @proposition.positionB %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @proposition.amount %>
+</p>
+
+<p>
+  <b>Opened:</b>
+  <%= @proposition.opened %>
+</p>
+
+
+<%= link_to 'Edit', edit_proposition_path(@proposition) %> |
+<%= link_to 'Back', propositions_path %>

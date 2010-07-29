@@ -1,0 +1,20 @@
+<div id="counters">
+  <h2>Players</h2>
+  <ul class="test">
+    <% @game.playings.each do |player| %>
+      <li class="<%= player.country.downcase %>">
+        <%= player.user.name %> (<%= player.country %>)- 
+        <%= image_tag player.country.downcase + '.gif', :title => player.country, 
+          :id => player.country, :class => country_available?(player.country) ? 'country token' : 'country', 
+          :style => country_shown?(player.country) ? '' : 'display:none' %>
+        <% if player.pass %>
+          <%= image_tag 'good.png', :title => 'Pass', :alt => 'Pass', :class => 'pass' %>
+        <% end %>
+        <% if country_available?(player.country) %>
+          <%= draggable_element player.country, :revert => true %>
+        <% end %>
+      </li> 
+    <% end %>
+  </ul>
+  <p>Current player is : <b><%= @game.current_player.user.name %></b> of <b><%= @game.current_player.country %></b></p>
+</div>

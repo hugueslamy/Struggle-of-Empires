@@ -1,0 +1,11 @@
+<%= form_for @game.current_proposition do |f| %>
+  <%= f.hidden_field :positionA %>
+  <%= f.hidden_field :positionB %>
+  <%= f.hidden_field :playing_id, :value => Playing.find_by_game_id_and_user_id( @game.id, current_user.id ).id %>
+  <%= f.label :amount, 'Suggested bid:' %>
+  <%= f.text_field :amount, :size => "4", :data_initial_amount => "#{@game.current_proposition.amount ? @game.current_proposition.amount + 1 : 0}", 
+    :value => @game.current_proposition.amount ? @game.current_proposition.amount + 1 : 0 %><br/>
+  <%= button_to_function 'Clear', "clear_current()" %>
+  <%= submit_tag 'Submit', :id => 'submit_button', :disabled => !@game.current_proposition.positionA.empty? || !@game.current_proposition.positionB.empty? %>
+  <%= submit_tag 'Pass',  :id => 'pass_button', :disabled => @game.current_proposition.positionA.empty? && @game.current_proposition.positionB.empty? %>
+<% end %>

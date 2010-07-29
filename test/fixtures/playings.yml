@@ -1,0 +1,110 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+# This model initially had no columns defined.  If you add columns to the
+# model remove the '{}' from the fixture names and add the columns immediately
+# below each fixture, per the syntax in the comments below
+#
+player_1:
+  user: user_1
+  game: game_1
+  country: France
+  play_order: 5 
+  pass: f
+  
+player_2:
+  user: user_2
+  game: game_1
+  country: Russia
+  play_order: 4
+  pass: f
+  
+player_3:
+  user: user_3
+  game: game_1
+  country: England
+  play_order: 3
+  pass: f
+  
+player_4:
+  user: user_4
+  game: game_1
+  country: Austria
+  play_order: 2
+  pass: f
+  
+player_5:
+  user: user_5
+  game: game_1
+  country: Spain
+  play_order: 1
+  pass: f
+  
+player_6:
+  user: user_1
+  game: game_2
+  country: France
+  play_order: 5 
+  pass: f
+  
+player_7:
+  user: user_2
+  game: game_2
+  country: Russia
+  play_order: 4
+  pass: f
+  
+player_8:
+  user: user_3
+  game: game_2
+  country: England
+  play_order: 3
+  pass: f
+  
+player_9:
+  user: user_4
+  game: game_2
+  country: Austria
+  play_order: 2
+  pass: f
+  
+player_10:
+  user: user_5
+  game: game_2
+  country: Spain
+  play_order: 1
+  pass: f  
+  
+player_11:
+  user: user_1
+  game: game_3
+  country: France
+  play_order: 5 
+  pass: f
+  
+player_12:
+  user: user_2
+  game: game_3
+  country: Russia
+  play_order: 4
+  pass: f
+  
+player_13:
+  user: user_3
+  game: game_3
+  country: England
+  play_order: 3
+  pass: f
+  
+player_14:
+  user: user_4
+  game: game_3
+  country: Austria
+  play_order: 2
+  pass: f
+  
+player_15:
+  user: user_5
+  game: game_3
+  country: Spain
+  play_order: 1
+  pass: f  
